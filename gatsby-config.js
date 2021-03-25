@@ -1,9 +1,19 @@
 module.exports = {
   plugins: [
     `gatsby-plugin-sharp`,
+    `@pauliescanlon/gatsby-mdx-embed`,
     {
       resolve: `gatsby-theme-blog`,
-      options: {},
+      options: {
+        basePath: `/`,
+      },
+    },
+    {
+      resolve: `gatsby-theme-notes`,
+      options: {
+        basePath: `/notes`,
+        breadcrumbSeparator: "»",
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -14,7 +24,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#007acc`,
         display: `minimal-ui`,
-        icon: `src/assets/favicon.png`,
+        icon: `./src/assets/favicon.png`,
         theme_color_in_head: false,
         // An optional attribute which provides support for CORS check.
         // If you do not provide a crossOrigin option, it will skip CORS for manifest.
