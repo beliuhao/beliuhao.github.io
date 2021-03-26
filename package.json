@@ -6,7 +6,8 @@
     "dev": "gatsby clean && gatsby develop -H 0.0.0.0 -p 8000",
     "start": "gatsby develop",
     "build": "gatsby build",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
     "@pauliescanlon/gatsby-mdx-embed": "0.0.29",
@@ -20,7 +21,9 @@
   },
   "description": "Blog of Hao Liu",
   "main": "gatsby-config.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  },
   "author": "Herman",
   "license": "ISC"
 }
