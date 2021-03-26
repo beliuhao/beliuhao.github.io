@@ -12,14 +12,15 @@ module.exports = {
       resolve: `gatsby-theme-notes`,
       options: {
         basePath: `/notes`,
+        homeText: "Notes",
         breadcrumbSeparator: "»",
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Coderlog`,
-        short_name: `Coderlog`,
+        name: `Hao Liu`,
+        short_name: `Herman`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#007acc`,
@@ -35,9 +36,9 @@ module.exports = {
   ],
   // Customize your site metadata:
   siteMetadata: {
-    title: `Coderlog`,
+    title: `Hao Liu`,
     author: `Herman`,
-    description: `Personal blog by Herman. I explain with words and code.`,
+    description: `Personal blog by Herman. I build things with words and codes.`,
     siteUrl: "https://liuhao.netlify.com/",
     social: [
       {

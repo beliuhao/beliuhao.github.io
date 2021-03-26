@@ -7,9 +7,10 @@ import { Styled } from "theme-ui"
 
 export default () => (
   <Fragment>
-    Personal blog by{" "}
-    <Styled.a href="https://liuhao.netlify.com/">Herman</Styled.a>
-    {` `}.
-    <br />I explain with words and code.
+    <Styled.a href="https://liuhao.netlify.com/">I AKA Herman,</Styled.a>
+    {` `} build things with words and codes.
+    <br />『 不用闪躲，为我喜欢的生活而活。』
+    <br />
+    年少轻狂，幸福时光；老当益壮，剑拔弩张。
   </Fragment>
 )
