@@ -1,9 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
-import { css, Styled } from "theme-ui"
+import { css, useColorMode, Styled } from "theme-ui"
 import Header from "gatsby-theme-blog/src/components/header"
 
 export default (props) => {
+  const [colorMode] = useColorMode()
+  const lightBg = `linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 80%, rgba(0,122,204,1) 90%, rgba(0,122,204,1) 100%)`
+  const darkBg = `linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 80%, rgba(102,224,255,1) 90%, rgba(102,224,255,1) 100%)`
+  const selectedBg = colorMode === `dark` ? darkBg : lightBg
   return (
     <Header {...props}>
       <Styled.a
@@ -18,9 +22,9 @@ export default (props) => {
           fontWeight: `bold`,
           color: `inherit`,
           textDecoration: `none`,
-          background: `linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(0,122,204,1) 50%, rgba(0,122,204,1) 100%)`,
+          background: selectedBg,
           ":hover": {
-            textDecoration: `underline`,
+            // textDecoration: `underline`,
           },
         })}
       >
