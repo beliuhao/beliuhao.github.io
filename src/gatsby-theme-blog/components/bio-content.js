@@ -7,7 +7,7 @@ import { Styled } from "theme-ui"
 
 export default () => (
   <Fragment>
-    <Styled.a href="https://liuhao.netlify.com/">I AKA Herman,</Styled.a>
+    <Styled.a href="https://beliuhao.github.io/">I AKA Herman,</Styled.a>
     {` `} build things with words and codes.
     <br />『 不用闪躲，为我喜欢的生活而活。』
     <br />

@@ -7,7 +7,7 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "gatsby clean && gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
     "@pauliescanlon/gatsby-mdx-embed": "0.0.29",

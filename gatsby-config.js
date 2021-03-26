@@ -39,7 +39,7 @@ module.exports = {
     title: `Hao Liu`,
     author: `Herman`,
     description: `Personal blog by Herman. I build things with words and codes.`,
-    siteUrl: "https://liuhao.netlify.com/",
+    siteUrl: "https://beliuhao.github.io/",
     social: [
       {
         name: `twitter`,
