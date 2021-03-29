@@ -1,17 +1,18 @@
 {
   "name": "hao.liu",
   "private": true,
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "gatsby clean && gatsby develop -H 0.0.0.0 -p 8000",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "clean": "gatsby clean",
+    "dev": "gatsby develop",
+    "start": "gatsby clean && gatsby develop -H 0.0.0.0 -p 8000",
+    "build": "gatsby clean && gatsby build",
+    "serve": "gatsby clean && gatsby build && gatsby serve",
     "deploy": "gatsby clean && gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
     "@pauliescanlon/gatsby-mdx-embed": "0.0.29",
     "gatsby": "^2.19.7",
+    "gatsby-plugin-feed": "^2.13.1",
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-sharp": "^2.5.3",
     "gatsby-theme-blog": "^1.2.35",
