@@ -11,7 +11,7 @@ cache:
 
 pages:
   script:
-    - npm cache clean --force && npm install
+    - npm cache clean --force && npm install --force
     - ./node_modules/.bin/gatsby build --prefix-paths
   artifacts:
     paths:
