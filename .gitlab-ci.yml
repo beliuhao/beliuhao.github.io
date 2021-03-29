@@ -18,8 +18,7 @@ cache:
 npm:install:
   stage: build
   script:
-    # Install via npm with frozen-lockfile to allow reproducible dependencies and check-files option to check if the node_modules cache is valid.
-    - npm install --frozen-lockfile --check-files --non-interactive
+    - npm install
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
     - if: $CI_MERGE_REQUEST_ID

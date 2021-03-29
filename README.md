@@ -1,5 +1,5 @@
 <h1 align="center">
-  Coderlog of Herman
+  Personal Blog of Herman Powered by Gatsby
 </h1>
 
 ## 🚀 Quick start
@@ -9,7 +9,7 @@
     Navigate into the project’s directory and start it up.
 
     ```shell
-    cd coderlog/
+    cd [reponame]/
     gatsby develop
     ```
 
@@ -78,3 +78,14 @@ Here are some places to start:
 - **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Reference Guides_ and _Gatsby API_ sections in the sidebar.
+
+## Update and Deployment
+
+### Update
+
+Do CRUD operations on files under ./content/notes/ and ./content/posts/ for creating new, reading, updating, and deleting.
+
+### Deployment
+
+- For `gitlab` and `netlify`, the `source` branch is used for the CI/CD. So each push to the `source` branch can trigger an automatic CI/CD job for deployment.
+- For `github`, the `master` branch is used for the CI/CD. So under the lateset `source` branch, run `npm run deploy` to generate the lastest static files and automatically push to the `master` branch for deployment.
