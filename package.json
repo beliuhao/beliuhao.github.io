@@ -20,7 +20,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
-  "description": "Blog of Hao Liu",
+  "description": "Herman's Blog",
   "main": "gatsby-config.js",
   "devDependencies": {
     "gh-pages": "^3.1.0"
