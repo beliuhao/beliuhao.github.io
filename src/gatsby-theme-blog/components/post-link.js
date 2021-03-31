@@ -4,7 +4,7 @@ import { Styled, jsx } from "theme-ui"
 import { Link } from "gatsby"
 
 const PostLink = ({ title, slug, date, excerpt }) => {
-  const trimedExcerpt = excerpt.split(".").shift() + "."
+  const trimedExcerpt = excerpt.split(".").shift() + "..."
   return (
     <div>
       <Styled.h2

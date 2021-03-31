@@ -3,16 +3,16 @@ module.exports = {
   siteMetadata: {
     title: `Hao Liu`,
     author: `@beliuhao`,
-    description: `Personal blog by Herman. I build things with words and codes.`,
-    siteUrl: "https://beliuhao.github.io/",
+    description: `Personal blog by Herman. I build stuff with words and codes.`,
+    siteUrl: "https://github.com/beliuhao",
     social: [
       {
-        name: `twitter`,
-        url: `https://twitter.com/beliuhao`,
+        name: `Github`,
+        url: `https://github.com/beliuhao`,
       },
       {
-        name: `github`,
-        url: `https://github.com/beliuhao`,
+        name: `Twitter`,
+        url: `https://twitter.com/beliuhao`,
       },
     ],
   },
