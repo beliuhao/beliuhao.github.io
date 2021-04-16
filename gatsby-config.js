@@ -1,7 +1,7 @@
 module.exports = {
   // Customize your site metadata:
   siteMetadata: {
-    title: `Hao Liu`,
+    title: `Herman`,
     author: `@beliuhao`,
     description: `Personal blog by Herman. I build stuff with words and codes.`,
     siteUrl: "https://github.com/beliuhao",
@@ -36,7 +36,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Hao Liu`,
+        name: `Herman`,
         short_name: `Herman`,
         start_url: `/`,
         background_color: `#ffffff`,
