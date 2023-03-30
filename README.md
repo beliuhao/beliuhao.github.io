@@ -90,3 +90,34 @@ Do CRUD operations on files under `./content/notes/` and `./content/posts/` for 
 
 - For `gitlab` and `netlify`, the `source` branch is used for the `CI/CD`. So each push to the `source` branch can trigger an automatic `CI/CD` job for deployment.
 - For `github`, the `master` branch is used for the `CI/CD`. So under the latest `source` branch, run `npm run deploy` to generate the latest static files and automatically push to the `master` branch for deployment.
+
+Assuming that `git remote -v` can print out the following information:
+
+```bash
+git remote -v
+
+all     git@github.com:beliuhao/beliuhao.github.io.git (fetch)
+all     git@github.com:beliuhao/beliuhao.github.io.git (push)
+all     git@gitlab.com:beliuhao/beliuhao.gitlab.io.git (push)
+gitlab  git@gitlab.com:beliuhao/beliuhao.gitlab.io.git (fetch)
+gitlab  git@gitlab.com:beliuhao/beliuhao.gitlab.io.git (push)
+origin  git@github.com:beliuhao/beliuhao.github.io.git (fetch)
+origin  git@github.com:beliuhao/beliuhao.github.io.git (push)
+```
+
+Then, the following commands can be used for deployment:
+
+```bash
+git checkout source
+# update the contents of the repository
+git add .
+git commit -m "Updated the contents of the repository"
+
+# Push updates of the source branch to all repositories
+# Which also means automatic deployment to Gitlab and Netlify
+git push all source
+
+# Deploy to GitHub
+# Under the source branch, execute the following command
+npm run deploy
+```
