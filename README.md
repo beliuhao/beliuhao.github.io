@@ -96,13 +96,13 @@ Assuming that `git remote -v` can print out the following information:
 ```bash
 git remote -v
 
-all     git@github.com:beliuhao/beliuhao.github.io.git (fetch)
-all     git@github.com:beliuhao/beliuhao.github.io.git (push)
-all     git@gitlab.com:beliuhao/beliuhao.gitlab.io.git (push)
-gitlab  git@gitlab.com:beliuhao/beliuhao.gitlab.io.git (fetch)
-gitlab  git@gitlab.com:beliuhao/beliuhao.gitlab.io.git (push)
-origin  git@github.com:beliuhao/beliuhao.github.io.git (fetch)
-origin  git@github.com:beliuhao/beliuhao.github.io.git (push)
+all     https://github.com/beliuhao/beliuhao.github.io.git (fetch)
+all     https://github.com/beliuhao/beliuhao.github.io.git (push)
+all     https://gitlab.com/beliuhao/beliuhao.gitlab.io.git (push)
+gitlab  https://gitlab.com/beliuhao/beliuhao.gitlab.io.git (fetch)
+gitlab  https://gitlab.com/beliuhao/beliuhao.gitlab.io.git (push)
+origin  https://github.com/beliuhao/beliuhao.github.io.git (fetch)
+origin  https://github.com/beliuhao/beliuhao.github.io.git (push)
 ```
 
 Then, the following commands can be used for deployment:
@@ -113,11 +113,12 @@ git checkout source
 git add .
 git commit -m "Updated the contents of the repository"
 
-# Push updates of the source branch to all repositories
+# Push updates of the source branch to `all`(both Gitlab and GitHub)
 # Which also means automatic deployment to Gitlab and Netlify
 git push all source
 
 # Deploy to GitHub
 # Under the source branch, execute the following command
+# Which will automatically generate master branch and push to `github master`
 npm run deploy
 ```
