@@ -11,6 +11,7 @@
     ```shell
     cd [reponame]/
     gatsby develop
+    # or run `npm run start`
     ```
 
 2.  **Open the code and start customizing!**
@@ -24,7 +25,7 @@
 Here are the top-level files and directories you'll see in a site created using the blog theme starter:
 
 ```text
-Coderlog
+Beliuhao
 .
 ├── content
 │   ├── assets
@@ -83,9 +84,9 @@ Here are some places to start:
 
 ### Update
 
-Do CRUD operations on files under ./content/notes/ and ./content/posts/ for creating new, reading, updating, and deleting.
+Do CRUD operations on files under `./content/notes/` and `./content/posts/` for creating new, reading, updating, and deleting.
 
 ### Deployment
 
-- For `gitlab` and `netlify`, the `source` branch is used for the CI/CD. So each push to the `source` branch can trigger an automatic CI/CD job for deployment.
-- For `github`, the `master` branch is used for the CI/CD. So under the lateset `source` branch, run `npm run deploy` to generate the lastest static files and automatically push to the `master` branch for deployment.
+- For `gitlab` and `netlify`, the `source` branch is used for the `CI/CD`. So each push to the `source` branch can trigger an automatic `CI/CD` job for deployment.
+- For `github`, the `master` branch is used for the `CI/CD`. So under the latest `source` branch, run `npm run deploy` to generate the latest static files and automatically push to the `master` branch for deployment.

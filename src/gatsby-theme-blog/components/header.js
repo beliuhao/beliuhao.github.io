@@ -30,6 +30,48 @@ export default (props) => {
       >
         Notes
       </Styled.a>
+      <Styled.a
+        as={Link}
+        href="https://beliuhao.github.io/slidev"
+        target="_blank"
+        css={css({
+          // flexGrow: 0.2,
+          // alignSelf: ["normal", "center"],
+          mx: [16, 24],
+          lineHeight: 2,
+          fontFamily: `heading`,
+          fontWeight: `bold`,
+          color: `inherit`,
+          textDecoration: `none`,
+          background: selectedBg,
+          ":hover": {
+            // textDecoration: `underline`,
+          },
+        })}
+      >
+        Slidev
+      </Styled.a>
+      <Styled.a
+        as={Link}
+        href="https://beliuhao.github.io/liuhao"
+        target="_blank"
+        css={css({
+          // flexGrow: 0.2,
+          // alignSelf: ["normal", "center"],
+          mx: [16, 24],
+          lineHeight: 2,
+          fontFamily: `heading`,
+          fontWeight: `bold`,
+          color: `inherit`,
+          textDecoration: `none`,
+          background: selectedBg,
+          ":hover": {
+            // textDecoration: `underline`,
+          },
+        })}
+      >
+        Me
+      </Styled.a>
     </Header>
   )
 }
