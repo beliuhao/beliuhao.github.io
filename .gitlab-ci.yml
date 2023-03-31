@@ -1,4 +1,4 @@
-image: node:16.20.0-alpine3.17
+image: node:16.20
 
 # This folder is cached between builds
 # https://docs.gitlab.com/ce/ci/yaml/README.html#cache
